@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+:root {
+    --cor-primaria: #071D41;
+    --cor-secundaria: #F6F7F9;
+    --cor-terciaria: #d7d7d7;
+    --cor-hover: #F4EEE0;
+
+    --fonte-principal: 'PT Serif', serif, Tahoma;
+    --fonte-secundaria: 'Source Serif 4', serif, Tahoma;
+    --fonte-terciaria: 'Lora', Tahoma;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-terciaria);
+    color: #000000;
+    font-family: var(--fonte-secundaria), tahoma;
+}
+
+.cabecalho {
+    background-color: var(--cor-primaria);
+    width: 100%;
+    box-shadow: 0 0 20px #000000;
+    line-height: 103px;
+}
+
+.titulo {
+    color: var(--cor-secundaria);
+    font-size: 2.5rem;
+    font-family: var(--fonte-principal), tahoma;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.leao {
+    width: 140px;
+    position: relative;
+    float: left;
+    background-color: var(--cor-primaria);
+}
+
+h1 {
+    margin: 18px 0px 15px 0px;
+    text-align: center;
+    font-family: var(--fonte-secundaria), tahoma;
+}
+
+section {
+    width: 50%;
+    float: left;
+}
+
+.tabelaAliquotas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-spacing: 90px 8px;
+}
+
+.tabelaAliquotasCabecalho {
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.tabelaIndices {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.indice {
+    text-align: center;
+}
+
+.tiposDepend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 18px 0px 12px 0px;
+
+}
+
+.dependLista {
+    font-size: 1.0rem;
+    font-weight: 400;
+    list-style: circle;
+    margin: 6px 180px 36px 180px;
+
+}
+
+section ul li {
+    margin-bottom: 5px;
+}
+
+aside {
+    width: 50%;
+    float: right;
+}
+
+.simulacao {
+    font-family: var(--fonte-secundaria), tahoma;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 4px 248px 14px 0px;
+}
+
+.form {
+    font-family: var(--fonte-secundaria), tahoma;
+    font-size: 1.5rem;
+    margin: 16px 64px 2px 64px;
+    text-align: left;
+    display: flex;
+}
+
+.input1 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 310px;
+}
+
+.input2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 413px;
+}
+
+.input3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 160px;
+}
+
+.infoIdoso {
+    margin: 0px 0px 0px 72px;
+    font-size: 1.15rem;
+    font-family: var(--fonte-secundaria), tahoma;
+    font-weight: 300;
+}
+
+.infoDepend {
+    margin: 0px 0px 0px 72px;
+    font-size: 1.15rem;
+    font-family: var(--fonte-secundaria), tahoma;
+    font-weight: 300;
+}
+
+.linkMedidaProvisoria {
+    font-size: 1.1rem;
+    font-family: var(--fonte-secundaria), tahoma;
+    margin: 32px 0px 14px 91px;
+}
+
+.bt {
+    background: var(--cor-primaria);
+    width: 116px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 21px;
+    color: var(--cor-secundaria);
+    border-radius: 20px;
+}
+
+.botao {
+    margin: 24px 240px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 24px 64px;
+}
+
+.rodape {
+    width: 100%;
+    background: var(--cor-primaria);
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px #000000;
+    position: absolute;
+    bottom: 0;
+}
+
+.duvidas {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+    margin: 32px 0px 0px 420px;
+}
+
+.brasil {
+    width: 200px;
+    float: left;
+    background-color: var(--cor-primaria);
+    margin: 3px 0px 5px 36px;
+}
+
+/* Setup - Notebook */
+@media ((min-width: 961px) and (max-width: 1367px)) {
+    .titulo {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-right: 150px;
+    }
+
+    h1 {
+        margin: 14px 0px 8px 0px;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    section {
+        width: 50%;
+        margin-bottom: 85px;
+    }
+
+    .tabelaAliquotas {
+        border-spacing: 96px 5px;
+    }
+
+    .tabelaAliquotasCabecalho {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .tabelaIndices {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .tiposDepend {
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin: 9px 0px;
+    }
+
+    .dependLista {
+        font-size: 0.95rem;
+        font-weight: 400;
+        margin: 4px 30px 36px 80px;
+    }
+
+    section ul li {
+        margin-bottom: 5px;
+    }
+
+    .simulacao {
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 5px 50px 14px 0px;
+    }
+
+    .form {
+        font-size: 1.3rem;
+        margin: 16px 48px 2px 48px;
+        text-align: left;
+        display: flex;
+    }
+
+    .input1 {
+        font-size: 14px;
+        width: 290px;
+    }
+    
+    .input2 {
+        font-size: 14px;
+        width: 378px;
+    }
+    
+    .input3 {
+        font-size: 14px;
+        width: 157px;
+    }
+
+    .infoIdoso {
+        margin: 0px 0px 0px 64px;
+        font-size: 1.0rem;
+        font-weight: 400;
+    }
+
+    .infoDepend {
+        margin: 0px 0px 0px 64px;
+        font-size: 1.0rem;
+        font-weight: 400;
+    }
+
+    .linkMedidaProvisoria {
+        font-size: 0.9rem;
+        font-family: var(--fonte-secundaria), tahoma;
+        margin: 36px 0px 16px 70px;
+    }
+
+    .bt {
+        width: 100px;
+        height: 36px;
+        font-weight: 500;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+
+    .botao {
+        margin: 14px 52px 0px 0px;
+    }
+
+    .resultado {
+        font-size: 1.35rem;
+        font-weight: 300;
+        margin: 20px 46px;
+    }
+
+    .rodape {
+        bottom: 0;
+        text-align: center;
+        position: fixed;
+    }
+
+    .duvidas {
+        font-size: 1.6rem;
+        margin: 32px 0px 0px 200px;
+    }
+
+    .brasil {
+        width: 210px;
+    }
+}
+
+/* Setup - Tablet */
+@media ((min-width: 480px) and (max-width: 960px)) {
+    .cabecalho {
+        line-height: 128px;
+        position: fixed;
+        top: 0;
+    }
+
+    .titulo {
+        font-size: 1.9rem;
+        margin-right: 28px;
+    }
+
+    .leao {
+        width: 173px;
+    }
+
+    h1 {
+        margin: 150px 0px 22px 0px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .tabelaAliquotas {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-spacing: 100px 8px;
+    }
+
+    .tabelaAliquotasCabecalho {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .tabelaIndices {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .tiposDepend {
+        font-size: 1.45rem;
+        font-weight: 600;
+        margin: 24px 0px 18px 0px;
+    }
+
+    .dependLista {
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin: 6px 110px 36px 130px;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 120px;
+    }
+
+    .simulacao {
+        font-size: 1.95rem;
+        margin: 2px 0px 32px 0px;
+    }
+
+    .input1 {
+        width: 318px;
+    }
+    
+    .input2 {
+        width: 430px;
+    }
+    
+    .input3 {
+        width: 158px;
+    }
+
+    .form {
+        font-size: 1.6rem;
+        margin: 18px 36px 3px 110px;
+    }
+
+    .infoIdoso {
+        margin: 0px 0px 0px 128px;
+        font-size: 1.15rem;
+        font-weight: 300;
+    }
+
+    .infoDepend {
+        margin: 0px 0px 0px 128px;
+        font-size: 1.15rem;
+        font-weight: 300;
+    }
+
+    .linkMedidaProvisoria {
+        font-size: 1.15rem;
+        margin: 32px 0px 14px 134px;
+    }
+
+    .bt {
+        width: 144px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 24px;
+        border-radius: 18px;
+    }
+
+    .botao {
+        margin: 24px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .resultado {
+        font-size: 1.7rem;
+        font-weight: 300;
+        margin: 28px 48px 18px 90px;
+    }
+
+    .rodape {
+        bottom: 0;
+        text-align: center;
+        position: fixed;
+    }
+
+    .duvidas {
+        font-size: 1.7rem;
+        margin: 30px 0px 0px 36px;
+    }
+
+    .brasil {
+        width: 230px;
+        margin: 5px 0px 5px 18px;
+    }
+}
+
+/* Setup - Smartphone */
+@media (max-width: 479px) {
+    .cabecalho {
+        line-height: 48px;
+        position: fixed;
+        top: 0;
+    }
+    
+    .titulo {
+        font-size: 1.45rem;
+        font-weight: 600;
+        margin: 7px 18px 0px 0px;
+    }
+    
+    .leao {
+        width: 150px;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+        margin: 128px 0px 20px 0px;
+    }
+    
+    section {
+        width: 100%;
+    }
+    
+    .tabelaAliquotas {
+        border-spacing: 7px 12px;
+        padding: 0px 15px;
+    }
+    
+    .tabelaAliquotasCabecalho {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    .tabelaIndices {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    
+    .tiposDepend {
+        font-size: 1.2rem;
+        margin: 16px 0px 14px 0px;
+    
+    }
+    
+    .dependLista {
+        font-size: 1.0rem;
+        margin: 8px 28px 36px 42px;
+    
+    }
+    
+    section ul li {
+        margin-bottom: 5px;
+    }
+    
+    aside {
+        width: 100%;
+        margin-bottom: 76px;
+    }
+    
+    .simulacao {
+        font-size: 1.7rem;
+        margin: 0px 8px 18px 8px;
+    }
+    
+    .input1 {
+        font-size: 0.8rem;
+        width: 198px;
+    }
+    
+    .input2 {
+        font-size: 0.8rem;
+        width: 275px;
+    }
+    
+    .input3 {
+        font-size: 0.8rem;
+        width: 85px;
+    }
+
+    .form {
+        font-size: 1.05rem;
+        margin: 14px 22px 2px 22px;
+    }
+        
+    .infoIdoso {
+        margin: 0px 26px 0px 24px;
+        font-size: 0.95rem;
+        font-family: var(--fonte-secundaria), tahoma;
+        font-weight: 300;
+    }
+    
+    .infoDepend {
+        margin: 0px 0px 0px 24px;
+        font-size: 0.95rem;
+        font-family: var(--fonte-secundaria), tahoma;
+        font-weight: 300;
+    }
+    
+    .linkMedidaProvisoria {
+        font-size: 0.9rem;
+        margin: 42px 8px 14px 25px;
+    }
+    
+    .bt {
+        width: 116px;
+        height: 38px;
+        font-size: 19px;
+    }
+    
+    .botao {
+        margin: 20px 0px;
+    }
+    
+    .resultado {
+        font-size: 1.0rem;
+        font-weight: 400;
+        margin: 18px 10px 22px 23px;
+    }
+    
+    .rodape {
+        bottom: 0;
+        text-align: center;
+        position: fixed;
+    }
+    
+    .duvidas {
+        font-size: 1.15rem;
+        margin: 8px 10px 0px 8px;
+    }
+    
+    .brasil {
+        width: 120px;
+        margin: 10px 0px 10px 16px;
+    }
+}

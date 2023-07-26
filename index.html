@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="irpf-minfaz.png">
+    <title>Calculadora - Imposto de Renda - Maio/2023</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="irpf-leao.png" class="leao">
+        <a class="titulo">Calculadora - IRPF - Base Maio/2023</a>
+    </header>
+
+    <main>
+        <h1>Ano Exercício - 2022</h1>
+
+        <section>
+            <table class="tabelaAliquotas">
+                <tr class="tabelaAliquotasCabecalho">
+                    <td>Base de Cálculo</td>
+                    <td>Alíquota</td>
+                </tr>
+                <tr class="tabelaIndices">
+                    <td>Até R$ 2.112,00</td>
+                    <td class="indice"> - </td>
+                </tr>
+                <tr class="tabelaIndices">
+                    <td>De R$ 2.112,01 até R$ 2.826,65</td>
+                    <td class="indice"> 7,5% </td>
+                </tr>
+                <tr class="tabelaIndices">
+                    <td>De R$ 2.826,66 até R$ 3.751,05</td>
+                    <td class="indice"> 15,0% </td>
+                </tr>
+                <tr class="tabelaIndices">
+                    <td>De R$ 3.751,06 até R$ 4.664,68</td>
+                    <td class="indice"> 22,5% </td>
+                </tr>
+                <tr class="tabelaIndices">
+                    <td>Acima de R$ 4.664,68</td>
+                    <td class="indice"> 27,5% </td>
+                </tr>
+            </table>
+            <p class="tiposDepend">Tipos de Dependentes</p>
+            <ul class="dependLista">
+                <li>Pessoa com menos de 16 anos</li>
+                <li>Filho ou enteado de até 21 anos</li>
+                <li>Pessoa com menos de até 24 anos e cursando ensino superior</li>
+                <li>Conjugê legal</li>
+                <li>Companheiro, pai/mãe de filho(s) ou que viva junto há pelo menos 5 anos</li>
+                <li>Pessoa incapaz de qualquer idade</li>
+                <li>Pessoa deficiente ou enferma</li>
+                <li>Neto ou bisneto com até 21 anos e guarda judicial</li>
+                <li>Bisavô(ó), avô(ó), sogro(a) ou pai/mãe, com uma renda máxima específica que precisa ser
+                    consultada junto à Receita antes da declaração</li>
+            </ul>
+        </section>
+
+        <aside>
+            <p class="simulacao">Simulação</p>
+            <div class="form">
+                <td><label>Salário Mensal :</label></td>
+                <td><input id="salario" name="salario" class="input1" placeholder="Informe seu rendimento mensal"></td>
+            </div>
+            <div class="form">
+                <td><label>Idade :</label></td>
+                <td><input id="idade" name="idade" class="input2" placeholder="Informe sua idade"></td>
+            </div>
+            <div class="infoIdoso"><i>*Rendimentos previdenciários isentos para maiores de 65 anos: <strong>
+                        R$1.903,98</strong></i></div>
+            <div class="form">
+                <td><label>Quantidade de dependentes :</label></td>
+                <td><input id="dependentes" name="dependentes" class="input3" placeholder="(0,1,2,3...)">
+                </td>
+            </div>
+            <div class="infoDepend"><i>*Dedução mensal por dependente: <strong>R$189,59</strong></i></p>
+            </div>
+
+            <a class="linkMedidaProvisoria"
+                href="http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/Mpv/mpv1171.htm" title="medidaProvisoria"
+                target="_blank">Medida Provisória nº 1.171, de 30 de abril de 2023</a>
+
+            <div class="botao"><button class="bt" onclick="calcular()">Calcular</button></div>
+
+            <div class="resultado">
+                <div id="salarioAnual" class="salarioAnual"></div>
+                <div id="tributo" class="tributo"></div>
+                <div id="aliquota" class="aliquota"></div>
+                <div id="descontoDependente" class="descontoDependente"></div>
+                <div id="imposto" class="imposto"></div>
+            </div>
+        </aside>
+
+        <script>
+            function calcular() {
+                var salario = Number(document.querySelector("#salario").value).toFixed(2);
+                var idade = Number(document.querySelector("#idade").value);
+                var dependentes = Number(document.querySelector("#dependentes").value);
+                var salarioAnual = Number(salario * 12);
+
+                var tributo;
+                var aliquota;
+
+                if (idade >= 65) {
+                    salario -= 1903.98;
+                }
+
+                if (salario <= 2112.00) {
+                    tributo = Number(salarioAnual * 0);
+                    aliquota = "0,0%";
+                } else if (salario > 2112.01 && salario <= 2826.65) {
+                    tributo = Number(salarioAnual * 0.075);
+                    aliquota = "7,5%";
+                } else if (salario > 2826.66 && salario <= 3751.05) {
+                    tributo = Number(salarioAnual * 0.15);
+                    aliquota = "15,0%";
+                } else if (salario > 3751.06 && salario <= 4664.68) {
+                    tributo = Number(salarioAnual * 0.225);
+                    aliquota = "22,5%";
+                } else {
+                    tributo = Number(salarioAnual * 0.275);
+                    aliquota = "27,5%";
+                }
+
+                var descontoDependente = Number(dependentes * (189.59 * 12));
+                var imposto = Number(tributo - descontoDependente);
+
+                document.getElementById("salarioAnual").innerHTML = `Rendimento Anual: <strong>R$ ${salarioAnual.toFixed(2)}</strong> <br>Total de Tributos: <strong>R$ ${tributo.toFixed(2)}</strong> <br>Alíquota, de acordo com a faixa salarial: <strong>${aliquota}</strong> <br>Número de Dependentes: <strong>${dependentes}</strong><br> Dedução, referente à dependente(s): <strong>R$ ${descontoDependente.toFixed(2)}</strong> <br>Total Imposto de Renda/2023: <strong>R$ ${imposto.toFixed(2)}</strong>`
+            }
+        </script>
+
+    </main>
+    <footer class="rodape">
+        <img src="irpf-brasil.png" class="brasil">
+        <p class="duvidas">Dúvidas? Acesse: <u>www.fazoL.gov.br</u></p>
+    </footer>
+</body>
+
+</html>
