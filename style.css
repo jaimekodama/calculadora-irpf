@@ -50,7 +50,7 @@ body {
 }
 
 h1 {
-    margin: 18px 0px 15px 0px;
+    margin: 18px 75px 15px 0px;
     text-align: center;
     font-family: var(--fonte-secundaria), tahoma;
 }
@@ -94,7 +94,7 @@ section {
     font-size: 1.0rem;
     font-weight: 400;
     list-style: circle;
-    margin: 6px 180px 36px 180px;
+    margin: 6px 220px 36px 245px;
 
 }
 
@@ -112,13 +112,13 @@ aside {
     font-weight: 600;
     font-size: 1.7rem;
     text-align: center;
-    margin: 4px 248px 14px 0px;
+    margin: 4px 48px 14px 0px;
 }
 
 .form {
     font-family: var(--fonte-secundaria), tahoma;
     font-size: 1.5rem;
-    margin: 16px 64px 2px 64px;
+    margin: 16px 64px 2px 156px;
     text-align: left;
     display: flex;
 }
@@ -127,32 +127,32 @@ aside {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
-    width: 310px;
+    width: 415px;
 }
 
 .input2 {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
-    width: 413px;
+    width: 517px;
 }
 
 .input3 {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
-    width: 160px;
+    width: 265px;
 }
 
 .infoIdoso {
-    margin: 0px 0px 0px 72px;
+    margin: 0px 0px 0px 160px;
     font-size: 1.15rem;
     font-family: var(--fonte-secundaria), tahoma;
     font-weight: 300;
 }
 
 .infoDepend {
-    margin: 0px 0px 0px 72px;
+    margin: 0px 0px 0px 160px;
     font-size: 1.15rem;
     font-family: var(--fonte-secundaria), tahoma;
     font-weight: 300;
@@ -161,7 +161,7 @@ aside {
 .linkMedidaProvisoria {
     font-size: 1.1rem;
     font-family: var(--fonte-secundaria), tahoma;
-    margin: 32px 0px 14px 91px;
+    margin: 32px 0px 14px 168px;
 }
 
 .bt {
@@ -175,16 +175,16 @@ aside {
 }
 
 .botao {
-    margin: 24px 240px 0px 0px;
+    margin: 24px 52px 0px 0px;
     display: flex;
     justify-content: center;
 }
 
 .resultado {
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     font-weight: 300;
-    margin: 24px 64px;
+    margin: 28px 0px 24px 158px;
 }
 
 .rodape {
@@ -220,7 +220,7 @@ aside {
     }
 
     h1 {
-        margin: 14px 0px 8px 0px;
+        margin: 14px 32px 8px 0px;
         text-align: center;
         font-size: 1.7rem;
     }
@@ -253,7 +253,7 @@ aside {
     .dependLista {
         font-size: 0.95rem;
         font-weight: 400;
-        margin: 4px 30px 36px 80px;
+        margin: 4px 56px 36px 96px;
     }
 
     section ul li {
@@ -264,39 +264,39 @@ aside {
         font-weight: 600;
         font-size: 1.5rem;
         text-align: center;
-        margin: 5px 50px 14px 0px;
+        margin: 5px 0px 14px 0px;
     }
 
     .form {
         font-size: 1.3rem;
-        margin: 16px 48px 2px 48px;
+        margin: 16px 36px 2px 86px;
         text-align: left;
         display: flex;
     }
 
     .input1 {
         font-size: 14px;
-        width: 290px;
+        width: 372px;
     }
     
     .input2 {
         font-size: 14px;
-        width: 378px;
+        width: 461px;
     }
     
     .input3 {
         font-size: 14px;
-        width: 157px;
+        width: 241px;
     }
 
     .infoIdoso {
-        margin: 0px 0px 0px 64px;
+        margin: 0px 0px 0px 90px;
         font-size: 1.0rem;
         font-weight: 400;
     }
 
     .infoDepend {
-        margin: 0px 0px 0px 64px;
+        margin: 0px 0px 0px 90px;
         font-size: 1.0rem;
         font-weight: 400;
     }
@@ -304,7 +304,7 @@ aside {
     .linkMedidaProvisoria {
         font-size: 0.9rem;
         font-family: var(--fonte-secundaria), tahoma;
-        margin: 36px 0px 16px 70px;
+        margin: 36px 0px 16px 97px;
     }
 
     .bt {
@@ -316,13 +316,13 @@ aside {
     }
 
     .botao {
-        margin: 14px 52px 0px 0px;
+        margin: 14px 10px 0px 0px;
     }
 
     .resultado {
         font-size: 1.35rem;
         font-weight: 300;
-        margin: 20px 46px;
+        margin: 20px 88px;
     }
 
     .rodape {
@@ -406,37 +406,37 @@ aside {
     }
 
     .input1 {
-        width: 318px;
+        width: 402px;
     }
     
     .input2 {
-        width: 430px;
+        width: 512px;
     }
     
     .input3 {
-        width: 158px;
+        width: 242px;
     }
 
     .form {
         font-size: 1.6rem;
-        margin: 18px 36px 3px 110px;
+        margin: 18px 36px 3px 80px;
     }
 
     .infoIdoso {
-        margin: 0px 0px 0px 128px;
+        margin: 0px 0px 0px 85px;
         font-size: 1.15rem;
         font-weight: 300;
     }
 
     .infoDepend {
-        margin: 0px 0px 0px 128px;
+        margin: 0px 0px 0px 85px;
         font-size: 1.15rem;
         font-weight: 300;
     }
 
     .linkMedidaProvisoria {
         font-size: 1.15rem;
-        margin: 32px 0px 14px 134px;
+        margin: 32px 0px 14px 94px;
     }
 
     .bt {
@@ -546,21 +546,21 @@ aside {
     
     .input1 {
         font-size: 0.8rem;
-        width: 198px;
+        width: 203px;
     }
     
     .input2 {
         font-size: 0.8rem;
-        width: 275px;
+        width: 273px;
     }
     
     .input3 {
         font-size: 0.8rem;
-        width: 85px;
+        width: 78px;
     }
 
     .form {
-        font-size: 1.05rem;
+        font-size: 1.0rem;
         margin: 14px 22px 2px 22px;
     }
         
