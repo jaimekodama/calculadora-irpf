@@ -50,7 +50,7 @@ body {
 }
 
 h1 {
-    margin: 18px 75px 15px 0px;
+    margin: 18px 55px 15px 0px;
     text-align: center;
     font-family: var(--fonte-secundaria), tahoma;
 }
@@ -201,7 +201,7 @@ aside {
     color: var(--cor-secundaria);
     font-family: var(--fonte-principal);
     font-size: 1.8rem;
-    margin: 32px 0px 0px 420px;
+    margin: 32px 0px 0px 477px;
 }
 
 .brasil {
