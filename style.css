@@ -58,6 +58,7 @@ h1 {
 section {
     width: 50%;
     float: left;
+    margin-bottom: 85px;
 }
 
 .tabelaAliquotas {
@@ -192,7 +193,7 @@ aside {
     display: flex;
     box-sizing: border-box;
     box-shadow: 0 0 7px #000000;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
