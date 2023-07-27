@@ -44,6 +44,7 @@ body {
 
 .leao {
     width: 140px;
+    height: 103px
     position: relative;
     float: left;
     background-color: var(--cor-primaria);
@@ -213,6 +214,7 @@ aside {
 
 .brasil {
     width: 200px;
+    height: 81px;
     float: left;
     background-color: var(--cor-primaria);
     margin: 3px 0px 5px 36px;
@@ -345,6 +347,7 @@ aside {
 
     .brasil {
         width: 210px;
+        height: 85px;
     }
 }
 
@@ -363,6 +366,7 @@ aside {
 
     .leao {
         width: 173px;
+        height: 127px;
     }
 
     h1 {
@@ -479,6 +483,7 @@ aside {
 
     .brasil {
         width: 230px;
+        height: 93px;
         margin: 5px 0px 5px 18px;
     }
 }
@@ -499,6 +504,7 @@ aside {
     
     .leao {
         width: 150px;
+        height: 110px;
     }
     
     h1 {
@@ -619,6 +625,7 @@ aside {
     
     .brasil {
         width: 120px;
+        height: 48px;
         margin: 10px 0px 10px 16px;
     }
 }
